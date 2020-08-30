@@ -1,0 +1,24 @@
+{
+  "name": "jquery-tab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup -c rollup.config.js"
+  },
+  "keywords": [],
+  "author": "nanlan",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^2.26.5",
+    "rollup-plugin-uglify": "^6.0.4"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "description": ""
+}

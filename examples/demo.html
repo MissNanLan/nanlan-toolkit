@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>组件化开发之tab选项卡</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #323232;
+            font-size: 12px;
+            font-family: "微软雅黑";
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+    </style>
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="../lib/jquery.min.js" type="application/javascript"></script>
+    <script src="../lib/tab.min.js" type="application/javascript"></script>
+</head>
+
+<body>
+    <p>1、触发事件为鼠标点击，没有切换效果</p>
+    <div id="tab" class="tab">
+        <ul class="tab-nav">
+            <li class="tab-nav__item active">新闻</li>
+            <li class="tab-nav__item">娱乐</li>
+            <li class="tab-nav__item">体育</li>
+            <li class="tab-nav__item">科技</li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-content__item active"><img src="images/01.jpg"></div>
+            <div class="tab-content__item"><img src="images/02.jpg"></div>
+            <div class="tab-content__item"><img src="images/01.jpg"></div>
+            <div class="tab-content__item"><img src="images/02.jpg"></div>
+        </div>
+    </div>
+
+    <script type="application/javascript">
+        window.onload = function () {
+
+            let dom = document.getElementById("tab");
+            new Tab(dom, {
+                trigger: 'mouseover', // hover
+            })
+        }
+            // $('#tab').tab({
+            //     trigger: 'mouseover', // hover
+            //     animation: false, // false
+            //     defaultTab: 2,
+            //     auto: false  // 3000
+            // });
+
+    </script>
+</body>
+
+</html>
