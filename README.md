@@ -1,6 +1,6 @@
-### 快速使用
+## 快速使用
 
-#### 引入 js
+### 引入 js
 
 ```
 script标签引入方式
@@ -8,7 +8,7 @@ script标签引入方式
 <script src="js/tab.min.js" type="text/javascript" charset="utf-8"></script>
 ```
 
-####  创建 div
+###  创建 div
 
 ```
 // 注意class的名字要一致
@@ -29,7 +29,7 @@ script标签引入方式
 </div>
 ```
 
-####  实例化
+###  实例化
 
 ```
 $(function(){
@@ -39,23 +39,23 @@ var tab = new Tab('#tab', {
 })
 
 ```
-### 使用npm
+## 使用npm
 
-#### 安装
+### 安装
 ```
 npm install nanlan-tab --save-dev
 
 ```
-#### 引入
+### 引入
 ```
 import Tab from 'nanlan-tab'
-  let dom = document.getElementById("tab");
-   var tab = new Tab(dom, {
-      trigger: "mouseover",
-    });
+let dom = document.getElementById("tab");
+var tab = new Tab(dom, {
+  trigger: "mouseover",
+});
 ```
 
-#### 模板
+### 模板
 ```
   <div id="tab" class="tab">
     <ul class="tab-nav">
@@ -73,9 +73,10 @@ import Tab from 'nanlan-tab'
     </div>
   </div>
 ```
-### 注意
+## 注意
 模板的class名字保持一直（这点不太好,待优化）
-### 参数说明
+
+## 参数说明
 
 | 参数       |      说明      |      类型       |     可选值      | 默认值 |
 | ---------- | :------------: | :-------------: | :-------------: | :----: |
