@@ -1,16 +1,28 @@
 {
   "name": "nanlan-tab",
   "main": "lib/tab.min.js",
+  "module": "lib/tab.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rollup -c rollup.config.js"
   },
-  "keywords": [],
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "tab",
+    "jquery-tab"
+  ],
   "author": "nanlan",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MissNanLan/toolkit"
+  },
   "devDependencies": {
     "rollup": "^2.26.5",
-    "rollup-plugin-uglify": "^6.0.4"
+    "rollup-plugin-uglify": "^6.0.4",
+    "standard-version": "^9.0.0"
   },
   "dependencies": {
     "jquery": "^3.5.1"
