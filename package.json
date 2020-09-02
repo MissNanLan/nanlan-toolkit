@@ -2,7 +2,7 @@
   "name": "nanlan-tab",
   "main": "lib/tab.min.js",
   "module": "lib/tab.min.js",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rollup -c rollup.config.js",
@@ -22,12 +22,11 @@
     "url": "https://github.com/MissNanLan/toolkit"
   },
   "husky": {
-        "hooks": {
-          "pre-commit": "echo 我要提交代码啦",
-          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-          "pre-push": "echo 提交代码前需要先进行单元测试 && npn test"
-        }
-    },
+    "hooks": {
+      "pre-commit": "echo checking commit msg...",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "devDependencies": {
     "husky": "^4.2.5",
     "rollup": "^2.26.5",
