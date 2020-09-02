@@ -21,7 +21,15 @@
     "type": "git",
     "url": "https://github.com/MissNanLan/toolkit"
   },
+  "husky": {
+        "hooks": {
+          "pre-commit": "echo 我要提交代码啦",
+          "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+          "pre-push": "echo 提交代码前需要先进行单元测试 && npn test"
+        }
+    },
   "devDependencies": {
+    "husky": "^4.2.5",
     "rollup": "^2.26.5",
     "rollup-plugin-uglify": "^6.0.4",
     "standard-version": "^9.0.0"
