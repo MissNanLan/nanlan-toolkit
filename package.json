@@ -2,7 +2,7 @@
   "name": "nanlan-tab",
   "main": "lib/tab.min.js",
   "module": "lib/tab.min.js",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "rollup -c rollup.config.js",

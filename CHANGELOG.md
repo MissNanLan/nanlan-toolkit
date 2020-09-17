@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/MissNanLan/toolkit/compare/v1.1.0...v1.1.1) (2020-09-17)
+
+
+### Bug Fixes
+
+* delete debug code ([f6c56da](https://github.com/MissNanLan/toolkit/commit/f6c56da4623aef753d7985ecf2302b0c751fceae))
+
 ## [1.1.0](https://github.com/MissNanLan/toolkit/compare/v1.0.4...v1.1.0) (2020-09-02)
 
 
